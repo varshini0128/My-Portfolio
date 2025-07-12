@@ -4,17 +4,21 @@ import { Code, Brain, Palette } from 'lucide-react';
 const About = () => {
   const highlights = [
     {
-      icon: <Code className="text-green-400" size={32} />,
-      title: "Full Stack Development",
+      icon: <Code className="text-blue-400" size={32} />,
+      title: (
+        <span className="text-blue-400">Full Stack Development</span>
+      ),
+
       description: "Experienced in building end-to-end applications using modern technologies like React, Python, and Go."
     },
     {
       icon: <Brain className="text-blue-400" size={32} />,
       title: "AI & Machine Learning",
+      
       description: "Passionate about implementing AI solutions and machine learning models for real-world problems."
     },
     {
-      icon: <Palette className="text-violet-400" size={32} />,
+      icon: <Palette className="text-blue-400" size={32} />,
       title: "UI/UX Design",
       description: "Creating intuitive and visually appealing user interfaces with tools like Figma and Sketch."
     }
@@ -24,7 +28,7 @@ const About = () => {
     <section id="about" className="py-20 bg-slate-700">
       <div className="container mx-auto px-6">
         <h2 className="text-4xl font-bold text-center mb-16">
-          <span className="bg-gradient-to-r from-blue-400 to-violet-500 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-blue-500 to-blue-400 bg-clip-text text-transparent">
             About Me
           </span>
         </h2>
@@ -46,7 +50,7 @@ const About = () => {
             {highlights.map((item, index) => (
               <div 
                 key={index}
-                className="bg-slate-600 p-6 rounded-xl border border-slate-500 hover:border-green-400/50 transition-all duration-300 transform hover:scale-105"
+                className="bg-slate-600 p-6 rounded-xl border border-slate-500 hover:border-blue-500/50 transition-all duration-300 transform hover:scale-105"
               >
                 <div className="mb-4">{item.icon}</div>
                 <h3 className="text-xl font-semibold mb-3 text-blue-400">{item.title}</h3>

@@ -8,9 +8,9 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="flex items-center gap-2 text-slate-400 mb-4 md:mb-0">
             <span>Made with</span>
-            <Heart className="text-red-400" size={16} fill="currentColor" />
+            <Heart className="text-red-500" size={16} fill="currentColor" />
             <span>and</span>
-            <Code className="text-green-400" size={16} />
+            <Code className="text-blue-500" size={16} />
             <span>by Varshini Siliveri</span>
           </div>
           

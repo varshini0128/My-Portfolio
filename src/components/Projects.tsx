@@ -8,14 +8,14 @@ interface ProjectsProps {
 const Projects: React.FC<ProjectsProps> = ({ onViewAll }) => {
   const projects = [
     {
-      title: "Data Securing using Blockchain & AI",
+      title: "Twitter Sentiment Analysis",
       description:
-        "Advanced security system combining blockchain technology with AI algorithms to ensure data integrity and protection against cyber threats.",
-      tech: ["Python", "Blockchain", "AI/ML", "Cryptography"],
-      category: "Blockchain & AI Project",
-      gradient: "from-violet-500 to-blue-500",
-      codeUrl: "https://github.com/varshini0128/ProjectHub/tree/main/DataSecurity",
-      demoUrl: "https://drive.google.com/file/d/1Cuy67ZxwZshbRz1C6Lo55hSeNWnHAiQ9/view?usp=drive_link" // You said you'll add this later
+        "Machine learning project analyzing Twitter data to determine sentiment patterns. Uses natural language processing and advanced ML algorithms.",
+      tech: ["Python", "TensorFlow", "NLP", "Data Analysis"],
+      category: "Machine Learning Project",
+      gradient: "from-blue-500 to-blue-200",
+      codeUrl: "https://github.com/varshini0128/ProjectHub/tree/main/SentimentScope/project",
+      demoUrl: "https://sentimentscope.netlify.app/"
     },
     {
       title: "Job Board Platform",
@@ -23,27 +23,26 @@ const Projects: React.FC<ProjectsProps> = ({ onViewAll }) => {
         "A comprehensive job board application connecting employers with job seekers. Features include job posting, application tracking, and user authentication.",
       tech: ["React", "Node.js", "MongoDB", "Express"],
       category: "Full Stack Web Application",
-      gradient: "from-blue-500 to-green-500",
+      gradient: "from-blue-500 to-blue-200",
       codeUrl: "https://github.com/varshini0128/ProjectHub/tree/main/JobBOARD/project",
       demoUrl: "https://jobboarddd.netlify.app/"
     },
     {
-      title: "Twitter Sentiment Analysis",
+      title: "Data Securing using Blockchain & AI",
       description:
-        "Machine learning project analyzing Twitter data to determine sentiment patterns. Uses natural language processing and advanced ML algorithms.",
-      tech: ["Python", "TensorFlow", "NLP", "Data Analysis"],
-      category: "Machine Learning Project",
-      gradient: "from-green-500 to-violet-500",
-      codeUrl: "https://github.com/varshini0128/ProjectHub/tree/main/SentimentScope/project",
-      demoUrl: "https://sentimentscope.netlify.app/"
-    }
-  ];
-
+        "Advanced security system combining blockchain technology with AI algorithms to ensure data integrity and protection against cyber threats.",
+      tech: ["Python", "Blockchain", "AI/ML", "Cryptography"],
+      category: "Blockchain & AI Project",
+      gradient: "from-blue-500 to-blue-200",
+      codeUrl: "https://github.com/varshini0128/ProjectHub/tree/main/DataSecurity",
+      demoUrl: "https://drive.google.com/file/d/1Cuy67ZxwZshbRz1C6Lo55hSeNWnHAiQ9/view?usp=drive_link" // You said you'll add this later
+    },
+  ]
   return (
     <section id="projects" className="py-20 bg-slate-700">
       <div className="container mx-auto px-6">
         <h2 className="text-4xl font-bold text-center mb-16">
-          <span className="bg-gradient-to-r from-violet-400 to-green-500 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-blue-500 to-blue-400 bg-clip-text text-transparent">
             Featured Projects
           </span>
         </h2>
@@ -52,7 +51,7 @@ const Projects: React.FC<ProjectsProps> = ({ onViewAll }) => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-slate-600 rounded-xl border border-slate-500 hover:border-green-400/50 transition-all duration-300 transform hover:scale-105 group overflow-hidden"
+              className="bg-slate-600 rounded-xl border border-slate-500 hover:border-blue-400/50 transition-all duration-300 transform hover:scale-105 group overflow-hidden"
             >
               {/* Project header with gradient */}
               <div className={`h-2 bg-gradient-to-r ${project.gradient}`}></div>
@@ -62,7 +61,7 @@ const Projects: React.FC<ProjectsProps> = ({ onViewAll }) => {
                   <span className="text-xs uppercase tracking-wide text-slate-400 font-medium">
                     {project.category}
                   </span>
-                  <h3 className="text-xl font-bold text-blue-400 mt-1 group-hover:text-green-400 transition-colors duration-300">
+                  <h3 className="text-xl font-bold text-blue-400 mt-1 group-hover:text-blue-400 transition-colors duration-300">
                     {project.title}
                   </h3>
                 </div>
@@ -76,7 +75,7 @@ const Projects: React.FC<ProjectsProps> = ({ onViewAll }) => {
                     {project.tech.map((tech, techIndex) => (
                       <span
                         key={techIndex}
-                        className="px-3 py-1 bg-slate-500 text-green-400 text-sm rounded-full border border-slate-400"
+                        className="px-3 py-1 bg-slate-400 text-blue-500 text-sm rounded-full border border-slate-400"
                       >
                         {tech}
                       </span>
@@ -89,7 +88,7 @@ const Projects: React.FC<ProjectsProps> = ({ onViewAll }) => {
                     href={project.codeUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-slate-400 hover:text-green-400 transition-colors duration-300"
+                    className="flex items-center gap-2 text-slate-400 hover:text-blue-400 transition-colors duration-300"
                   >
                     <Github size={16} />
                     <span className="text-sm">Code</span>
@@ -100,7 +99,7 @@ const Projects: React.FC<ProjectsProps> = ({ onViewAll }) => {
                       href={project.demoUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-slate-400 hover:text-green-400 transition-colors duration-300"
+                      className="flex items-center gap-2 text-slate-400 hover:text-blue-500 transition-colors duration-300"
                     >
                       <ExternalLink size={16} />
                       <span className="text-sm">Live Demo</span>
@@ -115,7 +114,7 @@ const Projects: React.FC<ProjectsProps> = ({ onViewAll }) => {
         <div className="text-center mt-12">
           <button
             onClick={onViewAll}
-            className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-500 to-violet-500 hover:from-blue-400 hover:to-violet-400 text-white px-6 py-3 rounded-full transition-all duration-300 transform hover:scale-105"
+            className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-500 to-blue-400 hover:from-blue-400 hover:to-blue-400 text-blue-200 px-6 py-3 rounded-full transition-all duration-300 transform hover:scale-105"
           >
             <span>View All Projects</span>
             <ExternalLink size={16} />

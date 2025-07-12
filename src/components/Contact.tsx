@@ -49,13 +49,13 @@ const handleSubmit = (e: React.FormEvent) => {
       href: "mailto:varshinisiliveri22@gmail.com"
     },
     {
-      icon: <Phone className="text-green-400" size={24} />,
+      icon: <Phone className="text-blue-400" size={24} />,
       label: "Phone",
       value: "+91 7842259549",
       href: "tel:+91 7842259549"
     },
     {
-      icon: <MapPin className="text-violet-400" size={24} />,
+      icon: <MapPin className="text-blue-400" size={24} />,
       label: "Location",
       value: "Hyderabad, India",
       href: "#"
@@ -66,7 +66,7 @@ const handleSubmit = (e: React.FormEvent) => {
     <section id="contact" className="py-20 bg-slate-700">
       <div className="container mx-auto px-6">
         <h2 className="text-4xl font-bold text-center mb-16">
-          <span className="bg-gradient-to-r from-green-400 to-violet-500 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-blue-500 to-blue-400 bg-clip-text text-transparent">
             Get In Touch
           </span>
         </h2>
@@ -86,12 +86,12 @@ const handleSubmit = (e: React.FormEvent) => {
                 <a
                   key={index}
                   href={info.href}
-                  className="flex items-center gap-4 p-4 bg-slate-600 rounded-lg border border-slate-500 hover:border-green-400/50 transition-all duration-300 group"
+                  className="flex items-center gap-4 p-4 bg-slate-600 rounded-lg border border-slate-500 hover:border-blue-400/50 transition-all duration-300 group"
                 >
                   <div className="flex-shrink-0">{info.icon}</div>
                   <div>
                     <div className="text-sm text-slate-400">{info.label}</div>
-                    <div className="text-blue-400 group-hover:text-green-400 transition-colors duration-300">
+                    <div className="text-blue-400 group-hover:text-blue-400 transition-colors duration-300">
                       {info.value}
                     </div>
                   </div>
@@ -105,20 +105,20 @@ const handleSubmit = (e: React.FormEvent) => {
               <div className="flex gap-4">
                 <a
                   href="https://github.com/varshini0128"
-                  className="w-12 h-12 bg-slate-600 rounded-lg border border-slate-500 hover:border-green-400/50 flex items-center justify-center text-slate-400 hover:text-green-400 transition-all duration-300 transform hover:scale-110"
+                  className="w-12 h-12 bg-slate-600 rounded-lg border border-slate-500 hover:border-blue-400/50 flex items-center justify-center text-slate-400 hover:text-blue-400 transition-all duration-300 transform hover:scale-110"
                 >
                   <Github size={20} />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/varshininetha" target="_blank"
                  
-                  className="w-12 h-12 bg-slate-600 rounded-lg border border-slate-500 hover:border-green-400/50 flex items-center justify-center text-slate-400 hover:text-green-400 transition-all duration-300 transform hover:scale-110"
+                  className="w-12 h-12 bg-slate-600 rounded-lg border border-slate-500 hover:border-blue-400/50 flex items-center justify-center text-slate-400 hover:text-blue-400 transition-all duration-300 transform hover:scale-110"
                 >
                   <Linkedin size={20} />
                 </a>
                 <a
                   href="mailto:varshinisiliveri22@gmail.com"
-                  className="w-12 h-12 bg-slate-600 rounded-lg border border-slate-500 hover:border-green-400/50 flex items-center justify-center text-slate-400 hover:text-green-400 transition-all duration-300 transform hover:scale-110"
+                  className="w-12 h-12 bg-slate-600 rounded-lg border border-slate-500 hover:border-blue-400/50 flex items-center justify-center text-slate-400 hover:text-blue-400 transition-all duration-300 transform hover:scale-110"
                 >
                   <Mail size={20} />
                 </a>
@@ -141,7 +141,7 @@ const handleSubmit = (e: React.FormEvent) => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-slate-600 border border-slate-500 rounded-lg focus:border-green-400 focus:outline-none transition-colors duration-300 text-slate-200"
+                    className="w-full px-4 py-3 bg-slate-600 border border-slate-500 rounded-lg focus:border-blue-400 focus:outline-none transition-colors duration-300 text-slate-200"
                     placeholder="Your Name"
                   />
                 </div>
@@ -156,7 +156,7 @@ const handleSubmit = (e: React.FormEvent) => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-slate-600 border border-slate-500 rounded-lg focus:border-green-400 focus:outline-none transition-colors duration-300 text-slate-200"
+                    className="w-full px-4 py-3 bg-slate-600 border border-slate-500 rounded-lg focus:border-blue-400 focus:outline-none transition-colors duration-300 text-slate-200"
                     placeholder="yourname@gmail.com"
                   />
                 </div>
@@ -173,7 +173,7 @@ const handleSubmit = (e: React.FormEvent) => {
                   value={formData.subject}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-slate-600 border border-slate-500 rounded-lg focus:border-green-400 focus:outline-none transition-colors duration-300 text-slate-200"
+                  className="w-full px-4 py-3 bg-slate-600 border border-slate-500 rounded-lg focus:border-blue-400 focus:outline-none transition-colors duration-300 text-slate-200"
                   placeholder="What's this about?"
                 />
               </div>
@@ -189,14 +189,14 @@ const handleSubmit = (e: React.FormEvent) => {
                   onChange={handleChange}
                   required
                   rows={6}
-                  className="w-full px-4 py-3 bg-slate-600 border border-slate-500 rounded-lg focus:border-green-400 focus:outline-none transition-colors duration-300 text-slate-200 resize-none"
+                  className="w-full px-4 py-3 bg-slate-600 border border-slate-500 rounded-lg focus:border-blue-400 focus:outline-none transition-colors duration-300 text-slate-200 resize-none"
                   placeholder="Tell me about your project..."
                 ></textarea>
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-blue-500 to-violet-500 hover:from-blue-400 hover:to-violet-400 text-white px-6 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 font-medium"
+                className="w-full bg-gradient-to-r from-blue-500 to-blue-400 hover:from-blue-500 hover:to-blue-500 text-white px-6 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 font-medium"
               >
                 <Send size={20} />
                 Send Message

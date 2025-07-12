@@ -27,7 +27,7 @@ const Header = () => {
     }`}>
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
+          <div className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-500 bg-clip-text text-transparent">
             Portfolio
           </div>
           
@@ -37,17 +37,17 @@ const Header = () => {
               <a
                 key={item.href}
                 href={item.href}
-                className="hover:text-green-400 transition-colors duration-300 relative group text-slate-200"
+                className="hover:text-blue-400 transition-colors duration-300 relative group text-slate-200"
               >
                 {item.label}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-400 transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
               </a>
             ))}
           </div>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-slate-200 hover:text-green-400 transition-colors"
+            className="md:hidden text-slate-200 hover:text-blue-400 transition-colors"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -62,7 +62,7 @@ const Header = () => {
                 <a
                   key={item.href}
                   href={item.href}
-                  className="hover:text-green-400 transition-colors duration-300 text-slate-200"
+                  className="hover:text-blue-400 transition-colors duration-300 text-slate-200"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.label}

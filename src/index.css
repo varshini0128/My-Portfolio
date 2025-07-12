@@ -93,7 +93,7 @@ button:hover {
 /* Gradient text selection */
 ::selection {
   background: rgba(34, 197, 94, 0.2);
-  color: #22c55e;
+  color: #67408d;
 }
 
 /* Hide scrollbar for skill logos animation */
@@ -112,4 +112,35 @@ button:hover {
     white 80%,
     transparent
   );
+}
+/* Add this new animation: */
+@keyframes scrollFast {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scroll-fast {
+  animation: scrollFast 15s linear infinite;
+}
+
+/* Mobile responsive fixes */
+@media (max-width: 768px) {
+  .animate-scroll-fast {
+    animation: scrollFast 10s linear infinite;
+  }
+  
+  .skills-container {
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .skills-scroll {
+    display: flex;
+    gap: 1rem;
+    min-width: max-content;
+  }
 }
